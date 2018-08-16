@@ -1,0 +1,48 @@
+---
+title: "Zadania dzień 2 -- NumPy"
+author: "Piotr Pasza Storożenko"
+header-includes:
+  - \usepackage[light]{anttor}
+output:
+  pdf_document: default
+---
+
+1. Niech `x` będzie wektorem.
+    * Wypisz wszystkie wartości z przedziału $[-2, -1] \cup [1, 2]$.
+    * Wypisz liczbę oraz proporcję ujemnych elementów `x`.
+    * Policz średnią z wartości bezwzględnych z `x`.
+    * Znajdź element najbardziej oddalony od 0.
+    * Znajdź element najbardziej oddalony od 2.
+    * Wypisz część ułamkową każdej z liczb.
+    * Stwórz wektor `y`, taki, że `y[i]` równa się `nieujemny` dla `x[i] >= 0` oraz `ujemny` w przeciwnym przypadku.
+    * Stwórz wektor `z`, taki, że `z[i]` równa się `maly` dla `x[i] < 1`,  `duzy` dla `x[i] > 1` i `sredni` w przeciwnym przypadku.
+    Wektor wygeneruj następująco:
+    ```python
+    import numpy as np
+    np.random.seed(123)
+    x = np.round(np.random.normal(size = 20), 2)
+    ```
+2. Napisz funkcję `clamp(x)`, która elementy mniejsze od 0, ustawi na 0, a elementy większe od 1 na 1.
+3. Napisz funkcję `err(x, y)`, która policzy proporcję źle sklasyfikowanych elementów -- 
+
+$\textrm{ERR(w, y)} = \frac{1}{|\bf{w}|} \sum^{|\bf{w}|}_{j=1} 1 \left (w_j = y_j\right)$,
+gdzie $1(a = b) = 1$, a $1(a \neq b)=0$.
+
+3. Napisz funkcję `mse(x, y)`, która policzy błąd średniokwadratowy -- 
+
+$\textrm{MSE(w, y)} = \frac{1}{|\bf{w}|} \sum^{|\bf{w}|}_{j=1} \left|w_j - y_j\right|^2$
+
+4. Napisz funkcję `rmse(x, y)`, która policzy pierwiastek z błędu średniokwadratowego -- 
+
+$\textrm{RMSE(w, y)} = \frac{1}{|\bf{w}|} \sqrt {\sum^{|\bf{w}|}_{j=1} \left( \left|w_j - y_j\right|^2 \right )}$
+
+5. Napisz funkcję `mad(x, y)`, która policzy błąd bezwzględny $\textrm{MAD(w, y)} = \frac{1}{|\bf{w}|} \sum^{|\bf{w}|}_{j=1} \left|w_j - y_j\right|$
+6. Napisz funkcję `approx_pi(n)`, która przybliża liczbę $\pi$ metodą Monte Carlo.
+7. Napisz funkcję `min_max_col(X)`. Niech $X \in \mathbb{R}^{n \times d}$. Każda z $n$ kolumn macierzy reprezentuje oddzielny punkt z $d$ wymiarowej przestrzeni. Wyznacz macierz $B \in \mathbb{R}^{2 \times d}$, gdzie $b_{1,j} = \min_i x_{i, j}$ oraz $b_{2,j} = \max_i x_{i, j}$. Jest to macierz zawierająca informację o rozpiętości danych w każdym z $d$ wymiarów.
+7. Napisz funkcję `standarize(X)`, która wyskaluje każdą kolumnę macierzy (oddzielnie). Proces skalowania polega na:
+  * Policzeniu średniej z kolumny;
+  * Policzeniu odchylenia standardowego z kolumny;
+  * Odjęciu wartości średniej od kolumny;
+  * Podzieleniu kolumny przez odchylenie standardowe. \\\
+  Wyskalowanie kolumny sprawia, że jej wartość średnia wynosi 0, a odchylenie standardowe 1. Jest to procedura często stosowana w ML. 
+
