@@ -38,7 +38,7 @@ $\textrm{RMSE(w, y)} = \frac{1}{|\bf{w}|} \sqrt {\sum^{|\bf{w}|}_{j=1} \left( \l
 
 5. Napisz funkcję `mad(x, y)`, która policzy błąd bezwzględny $\textrm{MAD(w, y)} = \frac{1}{|\bf{w}|} \sum^{|\bf{w}|}_{j=1} \left|w_j - y_j\right|$
 6. Napisz funkcję `approx_pi(n)`, która przybliża liczbę $\pi$ metodą Monte Carlo.
-7. Napisz funkcję `min_max_col(X)`. Niech $X \in \mathbb{R}^{n \times d}$. Każda z $n$ kolumn macierzy reprezentuje oddzielny punkt z $d$ wymiarowej przestrzeni. Wyznacz macierz $B \in \mathbb{R}^{2 \times d}$, gdzie $b_{1,j} = \min_i x_{i, j}$ oraz $b_{2,j} = \max_i x_{i, j}$. Jest to macierz zawierająca informację o rozpiętości danych w każdym z $d$ wymiarów.
+7. Napisz funkcję `min_max_col(X)`. Niech $X \in \mathbb{R}^{n \times d}$. Każdy z $n$ wierszy macierzy reprezentuje oddzielny punkt z $d$ wymiarowej przestrzeni. Wyznacz macierz $B \in \mathbb{R}^{2 \times d}$, gdzie $b_{1,j} = \min_i x_{i, j}$ oraz $b_{2,j} = \max_i x_{i, j}$. Jest to macierz zawierająca informację o rozpiętości danych w każdym z $d$ wymiarów.
 7. Napisz funkcję `standarize(X)`, która wyskaluje każdą kolumnę macierzy (oddzielnie). Proces skalowania polega na:
   * Policzeniu średniej z kolumny;
   * Policzeniu odchylenia standardowego z kolumny;

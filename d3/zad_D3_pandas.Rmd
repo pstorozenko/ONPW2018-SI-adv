@@ -1,0 +1,28 @@
+---
+title: "Zadania dzień 3 -- pandas"
+author: "Piotr Pasza Storożenko"
+header-includes:
+  - \usepackage[light]{anttor}
+output:
+  pdf_document: default
+---
+
+1. Z tabeli `tips` wybierz:
+    1. Dane o mężczyznach, których całkowity rachunek wyniósł $[10, 20]$ \$.
+    2. Dane o klientach z soboty i niedzieli, którzy zostawili co najmniej 5$ napiwku.
+2. Korzystając z tabeli `planes`:
+    1. Znajdź wszystkie unikalne nazwy silników (`drop_duplicates()`).
+    2. Znajdź wszystkie unikalne nazwy silników wraz z ich typami.
+    3. Policz ile jest różnych nazw silników. (`groupby()`).
+    4. Policz ile jest różnych nazw silników wraz z typami. (`groupby()`).
+    5. Znajdź wszystkie samoloty, które posiadają liczbę siedzeń pomiędzy 100, a 200 (`query()`).
+    6. Znajdź wszystkie samoloty, które posiadają liczbę siedzeń pomiędzy 100, a 200 oraz zostały wyprodukowane w 2010 roku lub później (`query()`).
+    7. Znajdź wszystkie samoloty, które zostały wyprodukowane przez `('BOEING', 'AIRBUS', 'EMBRAER')` i posiadają co najmniej 300 miejsc.
+    8. Policz ile było samolotów każdego z producentów, uwzględnij jedynie samoloty z co najmniej 200 miejscami.
+    9. Policz ile było samolotów każdego z producentów, wypisz tylko te, które miały co najmniej 10 zliczeń.
+    10. Policz ile było samolotów każdego z producentów, uwzględnij jedynie samoloty z co najmniej 200 miejscami, wypisz tylko te, które miały co najmniej 10 zliczeń.
+3. Korzystając z tabeli `weather`:
+    1. Zamień temperaturę na celsjusze.
+    2. Znajdź średnie dzienne temperatury.
+    3. Przedstaw średnie dzienne temperatury na wykresie. Oś x powinna być *w intuicyjnej postaci*.
+    4. Znajdź 5 najgorętszych dni i zaznacz je jakoś specjalnie na wykresie z podpunktu 3.
