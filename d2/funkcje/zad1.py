@@ -7,6 +7,7 @@ print(x[((-2 <= x) & (x <= -1)) | ((1 < x) & (x < 2))])
 
 # 2
 print(np.sum(x < 0) / x.shape[0])
+print((x < 0).mean())
 
 # 3
 print(np.abs(x).mean())

@@ -1,0 +1,17 @@
+---
+title: "Zadania dzień 4 -- implementacja algorytmu k-nn"
+author: "Piotr Pasza Storożenko"
+header-includes:
+  - \usepackage[light]{anttor}
+output:
+  pdf_document: default
+---
+
+1. Wczytaj ramkę danych `iris`.
+2. Zamień kolumnę z gatunkiem na zmienną typu categorical.
+3. Oddziel zmienne opisujące od zmiennej opisywanej i zamień powstałą macierz oraz wektor na `ndarray` z numpy'a.
+4. Podziel zbiór na treningowy i testowy w stosunku 3:1.
+5. Zaimplementuj klasyfikator 3-nn.
+6. Sprawdź jakość accuracy napisanego klasyfikatora (wykorzystaj funkcję z poprzednich zajęć).
+7. Przedstaw wyniki na wykresach.
+8. Porównaj wyniki 1-nn, 3-nn, 5-nn, 7-nn.
